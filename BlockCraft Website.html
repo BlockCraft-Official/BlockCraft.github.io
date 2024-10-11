@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockCraft</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 2em;
+            color: #0f0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #0f0;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #222;
+            padding: 10px 0;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            list-style: none;
+            text-align: left;
+            width: 150px;
+        }
+
+        nav ul li ul li {
+            display: block;
+            margin: 0;
+        }
+
+        nav ul li ul li a {
+            display: block;
+            padding: 10px 15px;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-transform: uppercase;
+        }
+
+        .home {
+            background: url('background.png') no-repeat center center/cover;
+            padding: 100px 20px;
+        }
+
+        h1, h2 {
+            letter-spacing: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0f0;
+            color: #000;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border: 2px solid #0f0;
+        }
+
+        footer {
+            background-color: #222;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .gallery {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BlockCraft</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#download">Download</a></li>
+                <li>
+                    <a href="#">Forum</a>
+                    <ul>
+                        <li><a href="https://scratch.mit.edu/discuss/topic/770265/">Submit Ideas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="home">
+        <h1>Welcome to BlockCraft</h1>
+        <p>Explore, Build, Survive in a World of Endless Possibilities!</p>
+        <a href="#download" class="btn">Download Now</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About BlockCraft</h2>
+        <p>BlockCraft is a sandbox game where you can create your own world, mine resources, and battle enemies. The only limit is your imagination!</p>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Endless Worlds to Explore</li>
+            <li>Creative and Survival Modes (Coming Soon!)</li>
+            <li>Multiplayer Support (Coming Soon!)</li>
+        </ul>
+    </section>
+
+    <section id="screenshots" class="screenshots">
+        <h2>Screenshots</h2>
+        <div class="gallery">
+            <img src="BlockCraft 1.0 (Archive 1).png" alt="Screenshot 1">
+            <img src="BlockCraft 1.0 (Archive 2).png" alt="Screenshot 2">
+            <img src="BlockCraft 1.0 (Archive 3).png" alt="Screenshot 3">
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2>Download BlockCraft</h2>
+        <p>Available for Windows, Mac, and Linux</p>
+        <a href="https://lion-go-games.itch.io/blockcraft" class="btn">Download Now</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vbox. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
